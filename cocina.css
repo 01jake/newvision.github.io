@@ -180,6 +180,9 @@ footer {
     color: #fff;
     padding: 50px 0;
 }
+.cocina{
+    padding-bottom: 50px; 
+}
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -199,4 +202,60 @@ footer {
 .social-icons a {
     margin-right: 15px;
     font-size: 1.2em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+        padding: 10px 0;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0;
+        width: auto;
+        text-align: center;
+    }
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .kitchen-style {
+        flex-direction: column;
+        align-items: center;
+    }
+    .kitchen-style img {
+        width: 100%;
+        margin-left: 0;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .gallery img {
+        height: auto;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
 }

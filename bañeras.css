@@ -202,3 +202,53 @@ footer {
     margin-right: 15px;
     font-size: 1.2em;
 }
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0;
+        width: auto;
+        text-align: center;
+    }
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .bathroom-style {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bathroom-style img {
+        width: 100%;
+        margin-left: 0;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .gallery img {
+        height: auto;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
