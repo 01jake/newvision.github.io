@@ -1,6 +1,24 @@
+import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { NavbarComponent } from './app/navbar/navbar.component';
+import { FooterComponent } from './app/footer/footer.component';
+import { PrincipalComponent } from './app/principal/principal.component';
+import { ContactosComponent } from './app/contactos/contactos.component';
+import { BanosComponent } from './app/banos/banos.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [FooterComponent, NavbarComponent, PrincipalComponent],
+  template: `
+   <app-navbar></app-navbar>
+    <app-principal></app-principal>
+    <app-footer></app-footer>
+    
+  `,
+})
+export class App {
+  name = 'Angular';
+}
+
+bootstrapApplication(App);

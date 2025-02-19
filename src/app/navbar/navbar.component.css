@@ -1,0 +1,33 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+   
+}
+nav .btn-contacto {
+    background: #2DC3C9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.logo img {
+    height: 100px;
+}

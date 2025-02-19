@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.container, p{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+.footer-content h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-content a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    margin-right: 15px;
+    font-size: 1.2em;
+}
