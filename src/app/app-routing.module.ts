@@ -6,7 +6,8 @@ import { CocinaComponent } from './cocina/cocina.component';
 import { PisosComponent } from './pisos/pisos.component';
 import { ContactosComponent } from './contactos/contactos.component';
 
-const routes: Routes = [
+// Exporta las rutas para que puedan ser usadas en main.ts
+export const routes: Routes = [
   { path: '', component: PrincipalComponent }, // Página principal
   { path: 'banos', component: BanosComponent },
   { path: 'cocina', component: CocinaComponent },

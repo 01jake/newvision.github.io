@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from "../footer/footer.component";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-principal',
@@ -18,6 +20,18 @@ export class PrincipalComponent {
   }
 
   miFuncionJavaScript() {
+    document.addEventListener('DOMContentLoaded', function() {
+      const carouselItems = document.querySelectorAll('.carousel-item');
+      let currentIndex = 0;
+  
+      function showNextSlide() {
+          carouselItems[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % carouselItems.length;
+          carouselItems[currentIndex].classList.add('active');
+      }
+  
+      setInterval(showNextSlide, 3000); // Cambia de imagen cada 5 segundos
+  });
     // Aquí puedes escribir tu código JavaScript
     document.addEventListener('DOMContentLoaded', function() {
       const cards = document.querySelectorAll('.producto-card');
@@ -37,18 +51,7 @@ export class PrincipalComponent {
           observer.observe(card);
       });
   });
-  document.addEventListener('DOMContentLoaded', function() {
-      const carouselItems = document.querySelectorAll('.carousel-item');
-      let currentIndex = 0;
-  
-      function showNextSlide() {
-          carouselItems[currentIndex].classList.remove('active');
-          currentIndex = (currentIndex + 1) % carouselItems.length;
-          carouselItems[currentIndex].classList.add('active');
-      }
-  
-      setInterval(showNextSlide, 5000); // Cambia de imagen cada 5 segundos
-  });
+ 
   
   }
 }

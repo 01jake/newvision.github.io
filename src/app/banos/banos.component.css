@@ -1,3 +1,8 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .hero {
     background-image: url('/baño-8.jpeg');
     background-size: cover;

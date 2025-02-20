@@ -1,11 +1,15 @@
 main {
     padding-top: 80px; /* To account for fixed header */
 }
-h2 {
+
+h2,h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
     margin-bottom: 40px;
-    color: #c0a080;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 /* Contact Form Styles */
@@ -35,7 +39,7 @@ h2 {
     font-size: 16px;
 }
 .submit-button {
-    background-color: #c0a080;
+    background-color: #333;
     color: #fff;
     padding: 12px 30px;
     border: none;
@@ -45,7 +49,7 @@ h2 {
     transition: background-color 0.3s ease;
 }
 .submit-button:hover {
-    background-color: #a88c60;
+    background-color: #666;
 }
 
 /* Contact Info Styles */
@@ -66,7 +70,7 @@ h2 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 .contact-box h3 {
-    color: #c0a080;
+    color: #333;
     margin-top: 0;
 }
 .map iframe {
