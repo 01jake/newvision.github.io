@@ -3,6 +3,14 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 20px;
+  
+}
+.containerbañosexterno {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
 }
 .backcolor{
     background-color: #fff3ee;
@@ -80,14 +88,16 @@
   }
 
   .container-baños {
-    display: flex;
-    align-items: center;
-    max-width: 1000px;
-    background: linear-gradient(to right, #5b0000, #b00000);
-    border-radius: 15px;
-    overflow: hidden;
-    color: white;
-    padding: 20px;
+    display: flex
+    ;
+        align-items: center;
+        max-width: 1000px;
+        /* background: linear-gradient(to right, #4d4d4d, #c9c9c9); */
+        border-radius: 15px;
+        overflow: hidden;
+        color: white;
+        padding: 20px;
+        color: black;
 }
 .text-content {
     width: 50%;
@@ -288,7 +298,7 @@ hr {
 }
 .btn {
     display: inline-block;
-    background-color: #c0a080;
+    background-color: #333;
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
@@ -296,7 +306,7 @@ hr {
     transition: background-color 0.3s ease;
 }
 .btn:hover {
-    background-color: #a88c60;
+    background-color: #666;
 }
 
 /* Main Content Styles */
