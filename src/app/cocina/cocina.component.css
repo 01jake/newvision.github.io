@@ -8,13 +8,18 @@
         flex-wrap: nowrap;
     
   }
+  .conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
   .categories h2 {
-    font-size: 4em;
+    font-size: 2em;
     margin-bottom: 20px;
   }
   .contenedor-cocina{
     display: flex;
-    margin: 20px;
+
   }
   .category {
     width: 23%; /* Ajusta el ancho para que quepan cuatro elementos en una fila */
@@ -24,11 +29,23 @@
     text-align: center;
   }
   
+  .category {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
   .category img {
-    max-width: 85%;
-    height: auto;
+    max-width: 100%;
+    height: 50%;
     margin-bottom: 10px;
     border-radius: 10px;
+    object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -64,63 +81,40 @@
     margin: 0 auto;
     padding: 0 20px;
 }
-.cabecera {
-    background-color: #fff; /* Fondo blanco para la cabecera */
-    padding: 20px;
-    text-align: center;
+.highlight {
+    color: #FF5733;
+    font-weight: bold;
 }
-
-.titulo-principal {
-    font-size: 2em;
-    margin-bottom: 10px;
+h1 {
+    font-size: 39px;
+    color: #222;
 }
-
-/* Contenedor de imagen */
-.contenedor-imagen {
-    position: relative;
-    text-align: center;
-}
-
-.contenedor-imagen img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-/* Pasos */
-.pasos {
-    position: relative;
-    z-index: 2;
+.features {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    margin-left: 20px; /* Ajusta el margen izquierdo para mover la sección a la derecha */
-
+    justify-content: space-between;
+    margin-top: 20px;
 }
-
-.paso {
-    width: 30%; /* Tres pasos por fila en pantallas medianas y grandes */
-    margin: 10px;
-    text-align: center;
-    background-color: #fff; /* Fondo blanco para los pasos */
-    padding: 20px;
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+.feature {
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-top: 2rem;
 }
-
-.numero {
-    font-size: 2em;
-    font-weight: bold;
-    color: #007bff; /* Color azul para los números */
-    margin-bottom: 10px;
+.feature i {
+    color: #FF5733;
+    font-size: 24px;
+    margin-right: 10px;
 }
-
-.paso p {
-    font-size: 1em;
+.feature h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.feature p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
 }
 .transforma {
     padding: 10px; /* Reduce el padding para hacer la sección más pequeña */
@@ -167,6 +161,7 @@
     border-radius: 10px;
 }
 .hero h1 {
+    color: #fff;
     font-size: 3em;
     margin-bottom: 20px;
 }
@@ -176,7 +171,7 @@
 }
 .btn {
     display: inline-block;
-    background-color: #c0a080;
+    background-color: #333;
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
@@ -184,7 +179,7 @@
     transition: background-color 0.3s ease;
 }
 .btn:hover {
-    background-color: #a88c60;
+    background-color: #666;
 }
 
 /* Main Content Styles */
@@ -216,7 +211,63 @@ ul {
     margin-bottom: 20px;
     padding-left: 20px;
 }
+.containere {
+    position: relative;
+    max-width: 1200px;
+    margin: 140px auto;
+}
+.image-container {
+    position: relative;
+}
+.image-container img {
+    width: 70%;
+    max-width: 1000px;
+    border-radius: 10px;
+    display: block;
+}
 
+.image-container {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.image-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 28px;
+    color: #222;
+}
+.steps {
+    margin-top: 20px;
+}
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.step-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FF5733;
+    margin-right: 10px;
+}
+.step p {
+    margin: 0;
+    font-size: 16px;
+}
 /* Gallery Styles */
 .gallery {
     display: grid;
