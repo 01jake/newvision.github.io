@@ -1,11 +1,35 @@
 /* Hero Section */
+h1 {
+    color: #111;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+p {
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
 
 .categories {
     padding-top: 40px;
     display: flex;
-        margin: 20px;
-        flex-direction: column;
-        flex-wrap: nowrap;
+    margin: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
     
   }
   .conteiner{
@@ -13,14 +37,22 @@
     margin: 0 auto;
     padding: 60px 20px;
   }
-  .categories h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  .contenedor-cocina{
+  .categories {
+    padding-top: 40px;
     display: flex;
-
+        margin: 20px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    
   }
+.categories h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.contenedor-cocina{
+  display: flex;
+
+}
   .category {
     width: 23%; /* Ajusta el ancho para que quepan cuatro elementos en una fila */
     margin-bottom: 20px;
@@ -85,10 +117,7 @@
     color: #FF5733;
     font-weight: bold;
 }
-h1 {
-    font-size: 39px;
-    color: #222;
-}
+
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -166,6 +195,7 @@ h1 {
     margin-bottom: 20px;
 }
 .hero p {
+    color: #b3b3b3;
     font-size: 1.2em;
     margin-bottom: 30px;
 }
@@ -182,19 +212,83 @@ h1 {
     background-color: #666;
 }
 
+.contenedordudas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   padding-bottom: 8%;
+}
+
+.texto-faq {
+    flex: 1;
+    max-width: 500px;
+}
+
+.titulo-faq {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0D1B2A;
+}
+
+.subtitulo-faq {
+    font-size: 1rem;
+    color: #4A4A4A;
+}
+
+.faq {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-card {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.faq-card:hover {
+    transform: scale(1.02);
+}
+
+.pregunta {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.respuesta {
+    font-size: 0.95rem;
+    color: #4A4A4A;
+    margin-top: 5px;
+}
+
+.ver-mas {
+    color: #E63946;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.ver-mas:hover {
+    color: #D62828;
+}
+
+
 /* Main Content Styles */
 main {
-    padding: 60px 0;
+    padding: 90px 0;
 }
-h2,h3{
-    color: #333;
-    font-size: 2em;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-p {
-    margin-bottom: 20px;
-}
+
 .kitchen-style {
     display: flex;
     align-items: start;
@@ -246,10 +340,7 @@ ul {
     padding: 20px;
     border-radius: 10px;
 }
-h1 {
-    font-size: 28px;
-    color: #222;
-}
+
 .steps {
     margin-top: 20px;
 }
@@ -297,6 +388,15 @@ h1 {
 }
 
 
-.cocina{
-   padding-bottom: 50px; 
+.cocina-content {
+    display: flex;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: wrap;
+}
+.containerr {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
 }

@@ -5,6 +5,31 @@
     padding: 20px 20px;
   
 }
+h1 {
+    color: #111;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+p {
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
 .containerbañosexterno {
     max-width: 1200px;
     margin: 0 auto;
@@ -167,11 +192,6 @@
     padding: 40px 20px;
 }
 
-h2 {
-    font-size: 2rem;
-    color: #222;
-    margin-bottom: 10px;
-}
 
 .testimonial-container {
     display: flex;
@@ -232,11 +252,7 @@ h2 {
     text-align: center;
 }
 
-h2 {
-    font-size: 2rem;
-    color: #222;
-    margin-bottom: 10px;
-}
+
 
 hr {
     width: 80px;
@@ -289,10 +305,12 @@ hr {
     border-radius: 10px;
 }
 .hero h1 {
+    color: #fff;
     font-size: 3em;
     margin-bottom: 20px;
 }
 .hero p {
+    color: #b3b3b3;
     font-size: 1.2em;
     margin-bottom: 30px;
 }
@@ -379,15 +397,7 @@ hr {
 main {
     padding: 60px 0;
 }
-h2 {
-    color: #333;
-    font-size: 2em;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-p {
-    margin-bottom: 20px;
-}
+
 
 
 
@@ -419,6 +429,15 @@ p {
 }
 
 
-.baños{
-   padding-bottom: 50px; 
+.cocina-content {
+    display: flex;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: wrap;
+}
+.containerr {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
 }
