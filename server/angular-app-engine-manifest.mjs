@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/newvision.github.io ',
+  basePath: '/',
   supportedLocales: {
   "en-US": ""
 },
